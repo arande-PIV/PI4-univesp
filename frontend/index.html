@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English For Kids</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen" class="screen active">
+            <h1 class="title">English for Kids</h1>
+            <p class="subtitle">Vamos aprender inglês brincando?</p>
+            <button id="start-game-btn" class="btn-start">Iniciar Jogo!</button>
+        </div>
+
+        <div id="game-screen" class="screen">
+            <div class="game-header">
+                <p id="question-counter">Pergunta 1 de 15</p>
+            </div>
+            <div class="question-card">
+                <img id="question-image" src="" alt="Adivinhe a palavra">
+                <div id="options-container" class="options-grid">
+                    </div>
+            </div>
+            <button id="next-question-btn" class="btn-next" disabled>Avançar</button>
+        </div>
+
+        <div id="results-screen" class="screen">
+            <h2 id="result-title">Fim de Jogo!</h2>
+            <p id="result-score" class="score">Você acertou 8 de 15!</p>
+            <p id="result-recommendation" class="recommendation">Que tal estudar um pouco mais sobre: <strong>Comida</strong></p>
+            <button id="play-again-btn" class="btn-start">Jogar Novamente</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

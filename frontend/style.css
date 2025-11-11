@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #66d9ff, #3d8bff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.screen { display: none; }
+.screen.active { display: block; }
+
+.title {
+    font-family: 'Fredoka One', cursive;
+    color: #3d8bff;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.subtitle { font-size: 1.2em; color: #555; margin-bottom: 30px; }
+
+.btn-start {
+    font-family: 'Fredoka One', cursive;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 5px 0 #e0a800;
+}
+.btn-start:hover { transform: translateY(-3px); }
+.btn-start:active { transform: translateY(2px); box-shadow: 0 2px 0 #e0a800; }
+
+.game-header { font-size: 1.2em; font-weight: bold; color: #555; margin-bottom: 15px; }
+
+.question-card {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#question-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 5px solid #e9ecef;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.option-btn {
+    background-color: #e9ecef;
+    border: 2px solid #ced4da;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.option-btn:hover { background-color: #d1d9e0; }
+
+.option-btn.selected {
+    background-color: #3d8bff;
+    color: white;
+    border-color: #3d8bff;
+}
+
+.btn-next {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-next:disabled {
+    background-color: #adb5bd;
+    cursor: not-allowed;
+}
+
+.score { font-size: 2em; font-weight: bold; color: #3d8bff; margin: 20px 0; }
+.recommendation { font-size: 1.2em; }
